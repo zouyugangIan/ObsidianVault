@@ -1,0 +1,2 @@
+	When designing modules, focus on the knowledge that's meeded to perform each task, not the order in which tasks occur.
+	As a software designer, your goal should be to minimize the amount of information needed outside a module.
