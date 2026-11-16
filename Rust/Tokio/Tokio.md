@@ -5,3 +5,5 @@ ConCurency异步和Parrallel并行是不同的两个概念.
 Tokio的主要思想就是如何高性能地并行任务,不一定要每次启动一个线程,单个线程也能高效处理多个任务.Future(采用Async关键字实现的Trait) 代表一个可以作为Task的期望实现,把Future放入Tokio运行时把它作为一个任务加入Tokio的调度队列(Scheduler). await用于等待某个TASK执行完成,通常用于获取其handle来进行信息处理.
 
 Tokio::Spawn是新启动一个运行时绿色线程来进行任务的方法.他的消耗很小,通常只要64kb内存分配即可启动,这与操作系统实际的绿色线程有差异.是一个更加优秀的解决方案.
+
+# Spawning
